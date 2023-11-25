@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title><link rel="icon" href="img/icon.jpg">
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(bg1.jpg);
+            -webkit-background-size: cover;
+            background-size: cover;
+            font-family: Poppins;
+
+        }
+
+        .wrapper{
+            width: 400px;
+            height: 400px;
+            color: white;
+            top: 50%;
+            left: 50%;
+            padding: 60px 30px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            box-shadow: 8px 8px 50px #000000;
+        }
+       h1{
+           margin: 0%;
+           padding: 0%;
+           font-weight: bold;
+           font-size: 22px;
+           color: #ffffff;
+           text-align: center;
+           margin-bottom: 8%;
+           font-family: Courgette;
+       }
+ 
+       .wrapper input{
+           width: 100%;
+           margin-bottom: 20px;
+
+       }
+       .wrapper input[type=text], .wrapper input[type=password]{
+           border: none;
+           border-bottom: 1px solid white;
+           background: transparent;
+           outline: none;
+           height: 30px;
+           font-size: 16px;
+           opacity: 1;
+           color: white;
+       }
+
+       .wrapper input[type=submit]{
+           border: none;
+           outline: none;
+           height: 40px;
+           background: gold;
+           color: #ffffff;
+           font-size: 14px;
+           font-weight: bold;
+
+       }
+       .wrapper input[type=submit]:hover{
+           cursor: pointer;
+       }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Sign in</h1>
+    <form method="POST" action="connect.php">
+    <input type="text" name="un" placeholder="Username" />
+    <input type="password" name="pw"   placeholder="Password"/>
+    <input type="submit"  name="save" value="Login" />
+
+    </form>
+</div>
+    
+</body>
+</html>

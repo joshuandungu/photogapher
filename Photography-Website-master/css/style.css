@@ -1,0 +1,205 @@
+/*google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+body{
+    margin: o;
+    line-height: 1.5;
+}
+body,
+input,
+textarea,
+button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-bw{
+    justify-content: space-between;
+}
+
+/*header */
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.header .brand-name{
+    
+    padding: 0 15px;
+}
+
+.header .nav{
+    
+    padding: 0 15px;
+}
+
+.header .nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header .nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 25px 0;
+    display: block;
+    transition: all 0.5s ease;
+}
+.header .nav ul li a:hover{
+    color:darkorange;
+}
+.home-section{
+    min-height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    
+}
+.home-section:before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#000000;
+    opacity: 0.6;
+    z-index: -1;
+}
+.home-section .row{
+    min-height: 100vh;
+}
+.home-section .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.home-section .home-content h1{
+
+    font-size: 60px;
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+/* service section */
+
+
+/*  album section */
+.service-section{
+    padding: 50px 0 50px;
+}
+.service-section .service-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    margin-bottom:30px ;
+
+}
+.service-section .service-item .service-item-inner{
+    position: relative;
+    overflow: hidden;
+
+
+}
+.service-section .service-item .service-item-inner img{
+
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+.service-section .service-item .service-item-inner:hover img{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.service-section .service-item .service-item-inner .overlay{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+
+
+}
+.service-section .service-item .service-item-inner:hover .overlay{
+    background-color: transparent;
+}
+.service-section .service-item .service-item-inner .overlay h4{
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+}
+.service-section .service-item .service-item-inner .overlay:hover h4{
+    transform: translateX(30px);
+    opacity: 0;
+
+}
+
+.album-section{
+    padding: 80px 0 80px;
+}
+.containers{
+    position: absolute;
+    top: 7%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.button{
+    background: #ffffff;
+    padding: 10px 15px;
+    color: darkblue;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0, 0, 0.75);
+    margin-top: 12px ;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.button:hover{
+  background: #34495e;
+  color: #ffffff;
+}
